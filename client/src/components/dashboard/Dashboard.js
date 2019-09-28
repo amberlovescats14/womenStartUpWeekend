@@ -2,8 +2,6 @@ import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Spinner from '../layout/Spinner'
 import DashboardFunction from './DashboardFunction'
-import ExperienceDashboard from '../../containers/ExperienceDashboardContainer'
-import EducationDashboard from '../../containers/EducationDashboardContainer'
 import PropTypes from 'prop-types'
 import { Paper, Button, Typography } from '@material-ui/core'
 
@@ -25,8 +23,6 @@ const Dashboard = (props) => {
       {props.profile !== null ?
       <Fragment>
         <DashboardFunction/>
-        <ExperienceDashboard />
-        <EducationDashboard/>
 
         <div className="my-2">
         <Button variant="contained" color="secondary"
