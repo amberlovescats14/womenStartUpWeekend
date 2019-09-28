@@ -1,32 +1,39 @@
 {
-  "name": "ls",
+  "name": "dev_mern",
   "version": "1.0.0",
-  "description": "prototype",
+  "description": "Social Network",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amberlovescats14/womenStartUpWeekend.git"
+    "url": "git+https://github.com/amberlovescats14/dev_MERN.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Amber Jones",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amberlovescats14/womenStartUpWeekend/issues"
+    "url": "https://github.com/amberlovescats14/dev_MERN/issues"
   },
-  "homepage": "https://github.com/amberlovescats14/womenStartUpWeekend#readme",
+  "homepage": "https://github.com/amberlovescats14/dev_MERN#readme",
   "dependencies": {
+    "@material-ui/core": "^4.3.0",
     "bcryptjs": "^2.4.3",
-    "concurrently": "^4.1.2",
-    "config": "^3.2.2",
+    "config": "^3.2.0",
     "express": "^4.17.1",
-    "express-validator": "^6.2.0",
+    "express-validator": "^6.1.1",
+    "google-maps-react": "^2.0.2",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.1",
-    "nodemon": "^1.19.2",
+    "mongoose": "^5.6.4",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
   }
 }

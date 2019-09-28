@@ -6,14 +6,9 @@ const Navbar = (props) => {
   const authLinks = (
     <div>
     <ul>
-    <li>
-      <Link to='/map'>5K</Link>
-    </li>
-    <li>
-      <Link to='/music'>Music</Link>
-    </li>
+
       <li>
-      <Link to='/profiles'>Runners</Link>
+      <Link to='/profiles'>Teachers</Link>
     </li>
     <li>
       <Link to='/posts'>Posts</Link>
@@ -31,11 +26,6 @@ const Navbar = (props) => {
         <span className="hide-sm">LogOut</span> 
       </Link>
     </li>
-    <li>
-      <Link to='/contact'>
-        Contact
-      </Link>
-    </li>
     </ul>
     </div>
   )
@@ -46,11 +36,11 @@ const Navbar = (props) => {
     <ul className="navbar-collapse">
         <li>
       <Link to='/'>
-        <i className='fas fa-code'/> PACE
+        <i className='fas fa-code'/> Home
       </Link>
     </li>
         <li>
-      <Link to='/profiles'>Runners</Link>
+      <Link to='/profiles'>Teachers</Link>
     </li>
 
 
@@ -64,11 +54,7 @@ const Navbar = (props) => {
         Login
       </Link>
     </li>
-    <li>
-      <Link to='/contact'>
-        Contact
-      </Link>
-    </li>
+
   </ul>
   )
   return (
