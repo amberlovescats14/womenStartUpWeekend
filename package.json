@@ -1,25 +1,8 @@
 {
-  "name": "dev_mern",
+  "name": "womenStartUpWeekend",
   "version": "1.0.0",
-  "description": "Social Network",
+  "description": "prototype",
   "main": "server.js",
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amberlovescats14/dev_MERN.git"
-  },
-  "author": "Amber Jones",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amberlovescats14/dev_MERN/issues"
-  },
-  "homepage": "https://github.com/amberlovescats14/dev_MERN#readme",
   "dependencies": {
     "@material-ui/core": "^4.3.0",
     "bcryptjs": "^2.4.3",
@@ -35,5 +18,24 @@
   "devDependencies": {
     "concurrently": "^4.1.1",
     "nodemon": "^1.19.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amberlovescats14/womenStartUpWeekend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amberlovescats14/womenStartUpWeekend/issues"
+  },
+  "homepage": "https://github.com/amberlovescats14/womenStartUpWeekend#readme"
 }
